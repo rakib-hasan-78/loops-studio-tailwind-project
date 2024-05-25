@@ -5,6 +5,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .btn{
+        @apply items-center justify-center border-2 border-black text-black hover:text-white px-10 py-2 tracking-widest uppercase font-alata bg-white hover:bg-black duration-200;
+    }
+}
+.item-container{
+    @apply flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 uppercase md:space-x-6 text-white text-2xl;
+}
+.item{
+    @apply relative overflow-hidden md:w-1/4;
+}
+.item-gradient{
+    @apply absolute right-0 left-0 top-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-25;
+}
+.item-title{
+    @apply absolute px-6 md:px-10 bottom-4 md:bottom-8 w-52 font-alata p-2 duration-200;
+}
+.item-desktop-image{
+    @apply hidden w-full transform  md:flex duration-200;
+}
+.item-mobile-image{
+    @apply w-full md:hidden  duration-200;
+}
+
 #hero{
     background-image:url('../images/desktop/image-hero.jpg');
     background-size:cover;
