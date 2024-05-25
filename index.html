@@ -4,53 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Demo Studio Tailwind</title>
   </head>
   <body>
-    <section class="bg-rose-50">
-      <div class="container mx-auto">
-        <div class="flex items-center justify-center min-h-screen">
-          <div class="relative bg-white flex flex-col md:flex-row m-6 md:m-0 space-y-2 md:space-y-0 md:space-x-2 md:justify-between rounded-2xl shadow-2xl">
-            <div class="p-7 md:p-10 mb-4">
-              <h2 class="mb-3 capitalize font-bold font-4xl md:font-5xl">log in</h2>
-              <p class="max-w-sm font-light font-fontMulish text-gray-500 mb-8">Log in to your account to upload or download pictures, videos or music.</p>
-              <input type="text" class="w-full p-4 border border-gray-300 placeholder:font-fontRokkitt placeholder:font-light focus:outline-blue-400 font-fontMulish" placeholder="Enter your email">
-              <div class="flex flex-col md:flex-row justify-between space-y-10 items-center md:space-y-0 mt-5">
-                <div class="font-thin text-cyan-700">Forgot password ?</div>
-                <button class="capitalize  bg-cyan-700 text-white flex items-center justify-center p-5 w-full md:w-auto rounded-lg space-x-5 px-9 shadow-sm shadow-cyan-100 translate hover:shadow-lg hover:-translate-y-0.5 border duration-150" type="button">
-                  next
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="10" x="0" y="0" viewBox="0 0 1560 1560" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                    <g>
-                    <path d="M1524 811.8H36c-17.7 0-32-14.3-32-32s14.3-32 32-32h1410.7l-194.2-194.2c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l248.9 248.9c9.2 9.2 11.9 22.9 6.9 34.9-5 11.9-16.7 19.7-29.6 19.7z" fill="#f6f6f6" opacity="1" data-original="#f6f6f6" class="">
-                    </path>
-                      <path d="M1274.8 1061c-8.2 0-16.4-3.1-22.6-9.4-12.5-12.5-12.5-32.8 0-45.3l249.2-249.2c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-249.2 249.2c-6.3 6.3-14.5 9.4-22.7 9.4z" fill="#f6f6f6" opacity="1" data-original="#f6f6f6" class="">
-                      </path>
-                    </g>
-                  </svg>
-                </button>
-              </div>
-              <div class="mt-5 border-b border-b-gray-300"></div>
-              <div class="text-sm font-thin text-center text-gray-400 p-3 font-fontMulish">or log in with</div>
-              <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-4 justify-center">
-                <button class="flex items-center justify-center p-2 border space-x-3 border-gray-300 rounded-sm shadow-sm transition hover:shadow-md md:-translate-x-0.5 duration-200">
-                  <img class="w-9" src="./src/images/facebook.png" alt="facebook-icon">
-                  <span class="font-thin">Facebook</span>
-                </button>
-                <button class="flex items-center justify-center p-2 border space-x-3 border-gray-300 rounded-sm shadow-sm transition hover:shadow-md md:-translate-x-0.5 duration-200">
-                  <img class="w-9" src="./src/images/google.png" alt="google-icon">
-                  <span class="font-thin">Google</span>
-                </button>
-              </div>
-            </div>
-              <img src="./src/images/image.jpg" alt="#" class=" w-[320px] hidden md:block rounded-r-lg">
-              <div class="group absolute top-2 right-3 w-9 h-9 bg-gray-300 group-hover:bg-gray-100 rounded-full cursor-pointer flex justify-center transition hover:-translate-y-0.5 duration-150 hover:shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
-                 xml:space="preserve" class=""><g><path d="m17.414 16 6.293-6.293a1 1 0 0 0-1.414-1.414L16 14.586 9.707 8.293a1 1 0 0 0-1.414 1.414L14.586 16l-6.293 6.293a1 1 0 1 0 1.414 1.414L16 17.414l6.293 6.293a1 1 0 0 0 1.414-1.414z" fill="gray" opacity="1" data-original="gray" class="w-2 h-2 fill-black group-hover:fill-gray-500 duration-150"></path></g></svg>
-              </div>
+    <header id="hero">
+      <div class="container max-w-6xl mx-auto px-6 py-12 md:px-0">
+        <!-- Logo/ Nav contsiner -->
+        <nav class="flex items-center justify-between font-bold text-white">
+          <div>
+            <img src="./src/images/logo.svg" alt="logo">
           </div>
-        </div>
+          
+        </nav>
       </div>
-    </section>
+    </header>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
